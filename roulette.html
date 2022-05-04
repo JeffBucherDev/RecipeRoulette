@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/roulette.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <header>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="/recipe.html">Home</a></li>
+        <li><a class="active" href="/roulette.html">Recipe Roulette</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <body class="roulette">
+    <!-- seach area  -->
+    <div class="searchContainer">
+      <div class="logoContainer">
+        <img class="miniLogo" src="/images/logoMini.PNG" alt="" />
+        <img class="logo" src="/images/logo.jpg" width="75%" />
+      </div>
+      <div class="row centerBox">
+        <div class="pronounce">
+          <h3>Recipe Roulette:</h3>
+        
+          </h4>
+         
+        </div>
+        <p>
+          Are you feeling ambitious? Tired of always cooking the same three
+          meals? Want to live life on the edge a little bit? Try Recipe Roulette
+          below!
+        </p>
+        <a class="button" id="getRecipe">I'm feeling Lucky</a>
+      </div>
+      <div class="row meal"></div>
+    </div>
+
+    <div class="pageWidth">
+      <div class="mainContainer" id="meal"></div>
+    </div>
+
+    <!-- end of search area (testing) -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/roulette.js"></script>
+  </body>
+</html>

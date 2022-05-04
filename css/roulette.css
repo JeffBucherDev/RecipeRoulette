@@ -1,0 +1,130 @@
+/* for centering the roulette card  */
+.mainContainer {
+  margin: 100px 0 0 400px;
+}
+
+/* for centering the index/cocktail cards */
+.mainContainer2 {
+  margin: 100px 0 0 100px;
+}
+
+.recipe-card {
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(37, 47, 73, 1);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(37, 47, 73, 1);
+  box-shadow: 0px 0px 20px 1px rgba(37, 47, 73, 1);
+  border: 1px solid rgba(37, 47, 73, 1);
+  width: 300px;
+  margin: 50px auto;
+  background: contain;
+  background-position: center center;
+}
+.recipe-card__body {
+  padding: 20px;
+  background: url("../images/card.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardImage img {
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  height: 150px;
+}
+
+.hidden-element {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.recipe-card__heading {
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: #444;
+}
+.recipe-card__subhead {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.recipe-card__ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  column-count: 2;
+}
+
+.recipe-card__ingredients li:before {
+  content: "\2022";
+  color: rgb(37, 47, 73);
+  margin-right: 5px;
+}
+
+.recipe-card__nav {
+  margin: 0 0 20px;
+  padding: 0;
+  border-bottom: 2px solid rgb(37, 47, 73);
+}
+
+.recipe-card__nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.recipe-card__nav h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-card__nav h3:after {
+  content: "";
+  display: block;
+  width: 0%;
+  padding-top: 3px;
+  margin: 0 auto;
+  border-bottom: 5px solid rgb(37, 47, 73);
+  transition: width 250ms ease-in-out 0s;
+}
+
+.recipe-card__nav h3:hover {
+  cursor: pointer;
+}
+
+.recipe-card__nav h3:hover:after,
+.recipe-card__nav h3.active:after {
+  width: 100%;
+}
+
+.videoWrapper iframe {
+  width: 81%;
+  height: 100%;
+  padding: 2px 0;
+  margin-left: 50px;
+  border-radius: 1rem;
+}
+
+.videoLabel {
+  font-size: 1.5rem;
+  margin: 25px 0;
+}
+
+@media (min-width: 599px) {
+  .recipe-card {
+    width: 600px;
+  }
+  .recipe-card__ingredients {
+    column-count: 2;
+  }
+}
+
+.btn-primary {
+  background-color: rgb(37, 47, 73);
+  border: none;
+}
